@@ -53,7 +53,7 @@ jobs:
       uses: rootstrap/create-pull-request@v5
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        head: update-knapsack-report
+        branch: update-knapsack-report
         base: main
         title: 'Update Knapsack report'
         maintainer_can_modify: true
