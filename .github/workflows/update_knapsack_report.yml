@@ -52,7 +52,7 @@ jobs:
     - name: Initialize Pull Request
       uses: rootstrap/create-pull-request@v5
       with:
-        pull_request_token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         head: update-knapsack-report
         base: main
         title: 'Update Knapsack report'
