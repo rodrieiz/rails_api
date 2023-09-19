@@ -2,6 +2,7 @@ name: Update Knapsack Report
 
 # This workflow should be scheduled at certain intervals
 on:
+  workflow_dispatch
   schedule:
     - cron: '*/3 * * * *'
 # The above cron does not run. Replace with the wanted periodicity.
