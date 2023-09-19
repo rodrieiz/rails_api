@@ -29,14 +29,14 @@ jobs:
 
     env:
       RAILS_ENV: test
+      github_token: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 3.1
+    - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        bundler-cache: true
     - name: Setup Database
       run: bundle exec rails db:create db:migrate
     - name: Update Knapsack Report
