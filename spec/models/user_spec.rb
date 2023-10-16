@@ -83,4 +83,12 @@ describe User do
       end
     end
   end
+
+  describe 'flaky' do
+    $raise = [true, false]
+
+    it 'fails' do
+      raise if $raise.shift
+    end
+  end
 end

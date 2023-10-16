@@ -69,8 +69,10 @@ end
 
 group :test do
   gem 'faker', '~> 2.13'
+  gem 'octokit', '~> 7.1'
   gem 'pg_query', '~> 4.2.3'
   gem 'prosopite', '~> 1.3.3'
+  gem 'rspec-retry', github: 'rootstrap/rspec-retry', branch: 'add-intermittent-callback'
   gem 'shoulda-matchers', '~> 5.3'
   gem 'simplecov', '~> 0.22.0', require: false
   gem 'webmock', '~> 3.19'
